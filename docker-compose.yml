@@ -34,6 +34,9 @@ services:
       spring.datasource.url: "jdbc:mysql://dbserver/mysql5.7_demo_sample"
       spring.datasource.username: "user"
       spring.datasource.password: "password"
+    volumes:
+      # ログの出力先
+      - ./logs:/logs
 # DBの永続化先
 volumes:
   mysql_db:
